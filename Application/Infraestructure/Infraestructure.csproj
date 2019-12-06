@@ -6,4 +6,8 @@
         <RootNamespace>FootballApi.Infraestructure</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
 </Project>
