@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\aspnet-core-dotnet-core\aspnet-core-dotnet-core.csproj" />
+    <ProjectReference Include="..\Io\Io.csproj" />
   </ItemGroup>
 
 </Project>
