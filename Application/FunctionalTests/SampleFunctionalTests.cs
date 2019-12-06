@@ -1,10 +1,10 @@
+using System;
+using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
-using System;
-using System.Threading;
 
-namespace SampleWebApplication.FunctionalTests
+namespace FootballApi.FunctionalTests
 {
     [TestClass]
     public class SampleFunctionalTests

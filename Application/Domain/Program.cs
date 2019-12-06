@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IO
+namespace FootballApi.Domain
 {
     class Program
     {

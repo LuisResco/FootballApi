@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Infraestructure
+namespace FootballApi.Infraestructure
 {
     class Program
     {

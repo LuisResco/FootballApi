@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Io", "Io\Io.csproj", "{8BD3CF50-CAE9-419F-A933-C0EFADBE7731}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnet-core-dotnet-core.FunctionalTests", "aspnet-core-dotnet-core.FunctionalTests\aspnet-core-dotnet-core.FunctionalTests.csproj", "{41C24313-0B1A-4217-BE2B-087F8809EE36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionalTests", "FunctionalTests\FunctionalTests.csproj", "{41C24313-0B1A-4217-BE2B-087F8809EE36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet-core-dotnet-core.UnitTests", "aspnet-core-dotnet-core.UnitTests\aspnet-core-dotnet-core.UnitTests.csproj", "{27450039-C3DF-4913-B5CB-1008732869E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{27450039-C3DF-4913-B5CB-1008732869E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infraestructure", "Infraestructure\Infraestructure.csproj", "{8A73B822-02A3-4581-B674-6C290E4B92FD}"
 EndProject
