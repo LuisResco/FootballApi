@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace FootballApi.Io
 {
@@ -17,18 +17,13 @@ namespace FootballApi.Io
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-
   //        services.Configure<Config>(Configuration);
             services.AddSingleton(new AppConfig(Configuration));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(option => option.EnableEndpointRouting = false)
+                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -36,13 +31,11 @@ namespace FootballApi.Io
             }
             else
             {
-                app.UseExceptionHandler("/Error");
+                app.UseHsts();
             }
 
-            app.UseStaticFiles();
-            app.UseCookiePolicy();
-
             app.UseMvc();
+            app.UseHttpsRedirection();
         }
     }
 }
